@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[真-屌丝的苦逼博客]]></title>
+  <link href="http://dddkkk02.github.com/atom.xml" rel="self"/>
+  <link href="http://dddkkk02.github.com/"/>
+  <updated>2012-04-09T23:24:34+08:00</updated>
+  <id>http://dddkkk02.github.com/</id>
+  <author>
+    <name><![CDATA[阿辉]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[你好 世界]]></title>
+    <link href="http://dddkkk02.github.com/blog/2012/04/09/ni-hao-shi-jie/"/>
+    <updated>2012-04-09T23:20:00+08:00</updated>
+    <id>http://dddkkk02.github.com/blog/2012/04/09/ni-hao-shi-jie</id>
+    <content type="html"><![CDATA[<h2>你好世界</h2>
+
+
+<p>
+博客生涯开始
+</p>
+
+]]></content>
+  </entry>
+  
+</feed>
