@@ -4,7 +4,7 @@
   <title><![CDATA[真-屌丝的苦逼博客]]></title>
   <link href="http://dddkkk02.github.com/atom.xml" rel="self"/>
   <link href="http://dddkkk02.github.com/"/>
-  <updated>2012-04-09T23:47:41+08:00</updated>
+  <updated>2012-04-11T21:19:11+08:00</updated>
   <id>http://dddkkk02.github.com/</id>
   <author>
     <name><![CDATA[阿辉]]></name>
@@ -12,6 +12,17 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[master octopress]]></title>
+    <link href="http://dddkkk02.github.com/blog/2012/04/11/master-octopress/"/>
+    <updated>2012-04-11T21:17:00+08:00</updated>
+    <id>http://dddkkk02.github.com/blog/2012/04/11/master-octopress</id>
+    <content type="html"><![CDATA[<h1>继续研究研究octopress</h1>
+
+<p>貌似可以在vim下写，继续失眠啊啊</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[两个github账号在一台电脑上使用]]></title>
