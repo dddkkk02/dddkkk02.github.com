@@ -4,7 +4,7 @@
   <title><![CDATA[标记它博客]]></title>
   <link href="http://dddkkk02.github.com/atom.xml" rel="self"/>
   <link href="http://dddkkk02.github.com/"/>
-  <updated>2012-04-15T12:40:34+08:00</updated>
+  <updated>2012-04-15T12:52:12+08:00</updated>
   <id>http://dddkkk02.github.com/</id>
   <author>
     <name><![CDATA[阿辉]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[edit_on_mac]]></title>
+    <title type="html"><![CDATA[Markdown 编辑器]]></title>
     <link href="http://dddkkk02.github.com/blog/2012/04/15/edit-on-mac/"/>
     <updated>2012-04-15T12:32:00+08:00</updated>
     <id>http://dddkkk02.github.com/blog/2012/04/15/edit-on-mac</id>
@@ -96,11 +96,15 @@
     <id>http://dddkkk02.github.com/blog/2012/04/09/ni-hao-shi-jie</id>
     <content type="html"><![CDATA[<h2>你好世界</h2>
 
+<p>原来的主机出现点问题，现在切换到GP上，用本地编辑器来编辑博客，这感觉还挺新鲜的。octopress默认的主题感觉就很不错，很清爽。以前在线编辑过程退化到现在线下编辑，通过软件发布的阶段，貌似退步了。</p>
 
-<p>
-博客生涯开始
-</p>
+<p>1.一个弊端就是要在不同电脑上写博客没那么容易了，搭建octopress的环境就需要ruby、以及ruby的一堆gem，除非搞一个portable版的，不晓得难度有多大。另外默认也没有编辑器，纯凭自己的爱好，愿意用Vim的可以继续用Vim，想要用其他的可以用其他的。</p>
 
+<p>2.编辑器不是所见即所得，对于排版简单的博客还好，如果排版稍微复杂，markdown感觉不一定hold住。另外这东西太geek范儿，一般人用起来真是不太容易。不过话又说回来，一般人谁用github，更何况用github page这种小众的东西。</p>
+
+<h3>SAE的CNAME支持</h3>
+
+<p>听说SAE也可以CNAME了，尝试绑定几个CNAME的二级域名到那边，每个月估计用不了几个云豆。在国内访问，SAE的速度比GP要快很多。也可以把他搞成图床，将来上传图片就放到那边。</p>
 ]]></content>
   </entry>
   
