@@ -4,7 +4,7 @@
   <title><![CDATA[标记它博客]]></title>
   <link href="http://dddkkk02.github.com/atom.xml" rel="self"/>
   <link href="http://dddkkk02.github.com/"/>
-  <updated>2012-04-15T12:52:12+08:00</updated>
+  <updated>2012-04-18T23:29:37+08:00</updated>
   <id>http://dddkkk02.github.com/</id>
   <author>
     <name><![CDATA[阿辉]]></name>
@@ -12,6 +12,33 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[准备开发一个kohana应用程序模板]]></title>
+    <link href="http://dddkkk02.github.com/blog/2012/04/18/zhun-bei-kai-fa-%5B%3F%5D-ge-kohanaying-yong-cheng-xu-mo-ban/"/>
+    <updated>2012-04-18T23:02:00+08:00</updated>
+    <id>http://dddkkk02.github.com/blog/2012/04/18/zhun-bei-kai-fa-[?]-ge-kohanaying-yong-cheng-xu-mo-ban</id>
+    <content type="html"><![CDATA[<h2>开发一个适用常见应用常见的kohana应用程序模板</h2>
+
+<p>最近在开发一些应用，不过苦于每个应用都要搞一些常见的操作，比如创建一个带有权限验证的控制器、数据表操作、模板操作等等。从侧面反应kohana框架在开发应用的时候做的还不够多，自带的template controller实在是太弱了，数据库操作模块也需要进一步封装；好在kohana容易定制，在这基础上开发一个半成品的模板，以后用的时候直接拷贝过去，改吧改吧模板，写写CRUD就完成绝大部分的体力活了。
+列举一下我能想到的、kohana做的还不够的功能</p>
+
+<h3>模板</h3>
+
+<p>模板这块能做的事情很多，比如一开始就把一个page分成几个部分，以及page里面包含的组件都抽象出来。
+有些是全局的，有些是这个page特定的，使用起来要尽可能的方便。初步的想法是把js，css等资源文件提前都绑定到view的global空间里面，这样模板的header就比较容易写。把page内容区分成page_top page_bottom page_nav&#8230;.等等区块，这些区块分别放到不同的view文件内，每个区块还有对应的数据绑定。controller里面有个配置字段来指定这些区块是否展示。听起来有点smarty模板继承的意味，不过比那个概念能简单点，够用即可。继续深化后续再想，目前这些基本上能满足需求。以后新程序只需要改吧改吧对应区块的位置以及css文件就可以很快写好页面了。</p>
+
+<h3>controller改进</h3>
+
+<p>每个项目都会对controller改造，其中有对ajax响应的操作，身份验证的hook操作、装配模板数据等，这块的需求不太多，改造起来容易，利用现有的组件就可以完成。</p>
+
+<h3>数据操作的改进</h3>
+
+<p>同controller，改进点不多。把一些脚手架工具搞过来，能自动从数据表生成类即可，基类提供一些常用的简化操作，比如fetchOne,query,update,validate。通过这样的改进，只要把对应逻辑放到对应的类里面，如果有两个数据表相关的操作，随便放到其中一个model里面即可，这个可以灵活处理。</p>
+
+<p>看的出来，主要的改进点都放到模板这块了，很多时候自己写模板就要花费一些时间。如果能模块化，以后改进就容易了。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Markdown 编辑器]]></title>

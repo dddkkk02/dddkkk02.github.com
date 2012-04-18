@@ -9,7 +9,7 @@
   <meta name="author" content="阿辉">
 
   
-  <meta name="description" content="没有太好用的跨平台Markdown editor 经常要在不同的平台下写，很多都是平台专有的编辑器，比如mou，看起来很不错，不过它要求系统是Lion，偶也没有办法了。 同样，也找不到一个快捷键相同的编辑器，可以跨平台使用，sublime算是一个，不过我经常把ctrl和command键搞混， &hellip;">
+  <meta name="description" content="开发一个适用常见应用常见的kohana应用程序模板 最近在开发一些应用，不过苦于每个应用都要搞一些常见的操作，比如创建一个带有权限验证的控制器、数据表操作、模板操作等等。从侧面反应kohana框架在开发应用的时候做的还不够多，自带的template controller实在是太弱了， &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -64,6 +64,60 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/04/18/zhun-bei-kai-fa-%5B%3F%5D-ge-kohanaying-yong-cheng-xu-mo-ban/">准备开发一个kohana应用程序模板</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-04-18T23:02:00+08:00" pubdate data-updated="true">Apr 18<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h2>开发一个适用常见应用常见的kohana应用程序模板</h2>
+
+<p>最近在开发一些应用，不过苦于每个应用都要搞一些常见的操作，比如创建一个带有权限验证的控制器、数据表操作、模板操作等等。从侧面反应kohana框架在开发应用的时候做的还不够多，自带的template controller实在是太弱了，数据库操作模块也需要进一步封装；好在kohana容易定制，在这基础上开发一个半成品的模板，以后用的时候直接拷贝过去，改吧改吧模板，写写CRUD就完成绝大部分的体力活了。
+列举一下我能想到的、kohana做的还不够的功能</p>
+
+<h3>模板</h3>
+
+<p>模板这块能做的事情很多，比如一开始就把一个page分成几个部分，以及page里面包含的组件都抽象出来。
+有些是全局的，有些是这个page特定的，使用起来要尽可能的方便。初步的想法是把js，css等资源文件提前都绑定到view的global空间里面，这样模板的header就比较容易写。把page内容区分成page_top page_bottom page_nav&#8230;.等等区块，这些区块分别放到不同的view文件内，每个区块还有对应的数据绑定。controller里面有个配置字段来指定这些区块是否展示。听起来有点smarty模板继承的意味，不过比那个概念能简单点，够用即可。继续深化后续再想，目前这些基本上能满足需求。以后新程序只需要改吧改吧对应区块的位置以及css文件就可以很快写好页面了。</p>
+
+<h3>controller改进</h3>
+
+<p>每个项目都会对controller改造，其中有对ajax响应的操作，身份验证的hook操作、装配模板数据等，这块的需求不太多，改造起来容易，利用现有的组件就可以完成。</p>
+
+<h3>数据操作的改进</h3>
+
+<p>同controller，改进点不多。把一些脚手架工具搞过来，能自动从数据表生成类即可，基类提供一些常用的简化操作，比如fetchOne,query,update,validate。通过这样的改进，只要把对应逻辑放到对应的类里面，如果有两个数据表相关的操作，随便放到其中一个model里面即可，这个可以灵活处理。</p>
+
+<p>看的出来，主要的改进点都放到模板这块了，很多时候自己写模板就要花费一些时间。如果能模块化，以后改进就容易了。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -308,6 +362,10 @@
   <ul id="recent_posts">
     
       <li class="post">
+        <a href="/blog/2012/04/18/zhun-bei-kai-fa-%5B%3F%5D-ge-kohanaying-yong-cheng-xu-mo-ban/">准备开发一个kohana应用程序模板</a>
+      </li>
+    
+      <li class="post">
         <a href="/blog/2012/04/15/edit-on-mac/">Markdown 编辑器</a>
       </li>
     
@@ -321,10 +379,6 @@
     
       <li class="post">
         <a href="/blog/2012/04/09/liang-ge-githubzhang-hao-zai-%5B%3F%5D-tai-dian-nao-shang-shi-yong/">两个github账号在一台电脑上使用</a>
-      </li>
-    
-      <li class="post">
-        <a href="/blog/2012/04/09/ni-hao-shi-jie/">你好 世界</a>
       </li>
     
   </ul>
